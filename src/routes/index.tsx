@@ -1,112 +1,140 @@
-import { component$ } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
-
-import Counter from '~/components/starter/counter/counter';
-import Hero from '~/components/starter/hero/hero';
-import Infobox from '~/components/starter/infobox/infobox';
-import Starter from '~/components/starter/next-steps/next-steps';
+import { component$ } from '@builder.io/qwik'
 
 export default component$(() => {
   return (
-    <>
-      <Hero />
-      <Starter />
-
-      <div role="presentation" class="ellipsis"></div>
-      <div role="presentation" class="ellipsis ellipsis-purple"></div>
-
-      <div class="container container-center container-spacing-xl">
-        <h3>
-          You can <span class="highlight">count</span>
-          <br /> on me
-        </h3>
-        <Counter />
-      </div>
-
-      <div class="container container-flex">
-        <Infobox>
-          <div q:slot="title" class="icon icon-cli">
-            CLI Commands
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="post">
+              <a class="post-img" href="blog-post.html">
+                <img src="./img/post-3.jpg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <a class="post-category cat-1" href="category.html">
+                    Web Design
+                  </a>
+                  <span class="post-date">March 27, 2018</span>
+                </div>
+                <h3 class="post-title">
+                  <a href="blog-post.html">
+                    Pagedraw UI Builder Turns Your Website Design Mockup Into
+                    Code Automatically
+                  </a>
+                </h3>
+              </div>
+            </div>
           </div>
-          <>
-            <p>
-              <code>npm run dev</code>
-              <br />
-              Starts the development server and watches for changes
-            </p>
-            <p>
-              <code>npm run preview</code>
-              <br />
-              Creates production build and starts a server to preview it
-            </p>
-            <p>
-              <code>npm run build</code>
-              <br />
-              Creates production build
-            </p>
-            <p>
-              <code>npm run qwik add</code>
-              <br />
-              Runs the qwik CLI to add integrations
-            </p>
-          </>
-        </Infobox>
 
-        <div>
-          <Infobox>
-            <div q:slot="title" class="icon icon-apps">
-              Example Apps
+          <div class="col-md-4">
+            <div class="post">
+              <a class="post-img" href="blog-post.html">
+                <img src="./img/post-4.jpg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <a class="post-category cat-2" href="category.html">
+                    JavaScript
+                  </a>
+                  <span class="post-date">March 27, 2018</span>
+                </div>
+                <h3 class="post-title">
+                  <a href="blog-post.html">
+                    Chrome Extension Protects Against JavaScript-Based CPU
+                    Side-Channel Attacks
+                  </a>
+                </h3>
+              </div>
             </div>
-            <p>
-              Have a look at the <a href="/demo/flower">Flower App</a> or the{' '}
-              <a href="/demo/todolist">Todo App</a>.
-            </p>
-          </Infobox>
+          </div>
 
-          <Infobox>
-            <div q:slot="title" class="icon icon-community">
-              Community
+          <div class="col-md-4">
+            <div class="post">
+              <a class="post-img" href="blog-post.html">
+                <img src="./img/post-5.jpg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <a class="post-category cat-3" href="category.html">
+                    Jquery
+                  </a>
+                  <span class="post-date">March 27, 2018</span>
+                </div>
+                <h3 class="post-title">
+                  <a href="blog-post.html">
+                    Ask HN: Does Anybody Still Use JQuery?
+                  </a>
+                </h3>
+              </div>
             </div>
-            <ul>
-              <li>
-                <span>Questions or just want to say hi? </span>
-                <a href="https://qwik.builder.io/chat" target="_blank">
-                  Chat on discord!
-                </a>
-              </li>
-              <li>
-                <span>Follow </span>
-                <a href="https://twitter.com/QwikDev" target="_blank">
-                  @QwikDev
-                </a>
-                <span> on Twitter</span>
-              </li>
-              <li>
-                <span>Open issues and contribute on </span>
-                <a href="https://github.com/BuilderIO/qwik" target="_blank">
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <span>Watch </span>
-                <a href="https://qwik.builder.io/media/" target="_blank">
-                  Presentations, Podcasts, Videos, etc.
-                </a>
-              </li>
-            </ul>
-          </Infobox>
+          </div>
+
+          <div class="clearfix visible-md visible-lg"></div>
+
+          <div class="col-md-4">
+            <div class="post">
+              <a class="post-img" href="blog-post.html">
+                <img src="./img/post-6.jpg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <a class="post-category cat-2" href="category.html">
+                    JavaScript
+                  </a>
+                  <span class="post-date">March 27, 2018</span>
+                </div>
+                <h3 class="post-title">
+                  <a href="blog-post.html">
+                    Why Node.js Is The Coolest Kid On The Backend Development
+                    Block!
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="post">
+              <a class="post-img" href="blog-post.html">
+                <img src="./img/post-1.jpg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <a class="post-category cat-4" href="category.html">
+                    Css
+                  </a>
+                  <span class="post-date">March 27, 2018</span>
+                </div>
+                <h3 class="post-title">
+                  <a href="blog-post.html">CSS Float: A Tutorial</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="post">
+              <a class="post-img" href="blog-post.html">
+                <img src="./img/post-2.jpg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <a class="post-category cat-1" href="category.html">
+                    Web Design
+                  </a>
+                  <span class="post-date">March 27, 2018</span>
+                </div>
+                <h3 class="post-title">
+                  <a href="blog-post.html">
+                    Tell-A-Tool: Guide To Web Design And Development Tools
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </>
-  );
-});
-
-export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
-  meta: [
-    {
-      name: 'description',
-      content: 'Qwik site description',
-    },
-  ],
-};
+    </div>
+  )
+})
