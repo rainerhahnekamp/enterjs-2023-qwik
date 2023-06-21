@@ -525,6 +525,8 @@ textarea.input {
 .post .post-meta {
     margin-top: 15px;
     margin-bottom: 15px;
+    display: flex;justify-content: space-between;
+    align-items: center;
 }
 .post-meta .post-category {
     font-size: 13px;
@@ -537,6 +539,9 @@ textarea.input {
     background-color: #212631;
     -webkit-transition: 0.2s opacity;
     transition: 0.2s opacity;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
 }
 .post-meta .post-category:hover, .post-meta .post-category:focus {
     text-decoration: none;
