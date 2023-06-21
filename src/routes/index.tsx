@@ -15,7 +15,7 @@ export default component$(() => {
                     <img src="./img/post-3.jpg" alt="" />
                   </a>
                   <div class="post-body">
-                    <div class="post-meta flex">
+                    <div class="post-meta">
                       <a class="post-category cat-1" href="category.html">
                         {post.title}
                       </a>
